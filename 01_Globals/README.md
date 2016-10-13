@@ -14,7 +14,7 @@ with the same name as one of ours, we would get a collision.
 ### Disclaimer
 
 In this particular example, it **technically** doesn't matter which file is included first of our three utility modules `add.js`,
-`reduce.js`, and `sum.js` because each module is only defining functions and not running any code from its dependencies. The only
-thing that matters is that all three global "modules" are loaded before `main.js`, because `main.js` is where dependency code gets
-executed. In a more complex production scenario, each module may actually run some of its dependency code on initialization which would yield
-a much less forgiving example.
+`reduce.js`, and `sum.js` because each module is only defining functions and not invoking any code that depends on its dependencies.
+The only thing that matters is that all three global "modules" are loaded before `main.js`, because `main.js` is where dependency code
+gets executed. In a more complex production scenario, each module may actually run some of its dependency code on initialization which
+would yield a much less forgiving example.
