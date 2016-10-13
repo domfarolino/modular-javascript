@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/domfarolino/modular-javascript/issues"
   },
-  "homepage": "https://github.com/domfarolino/modular-javascript#readme"
+  "homepage": "https://github.com/domfarolino/modular-javascript#readme",
+  "dependencies": {
+    "browserify": "^13.1.0"
+  }
 }
