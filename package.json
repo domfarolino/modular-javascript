@@ -1,0 +1,26 @@
+{
+  "name": "modular-javascript",
+  "version": "1.0.0",
+  "description": "Demonstrating different JavaScript module formats (CommonJS, AMD, ES2015, etc)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domfarolino/modular-javascript.git"
+  },
+  "keywords": [
+    "commonjs",
+    "amd",
+    "es2016",
+    "es6",
+    "module"
+  ],
+  "author": "Dom Farolino <domfarolino@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domfarolino/modular-javascript/issues"
+  },
+  "homepage": "https://github.com/domfarolino/modular-javascript#readme"
+}
