@@ -13,7 +13,7 @@ and open `index.html` in you're favorite web browser.
 -------
 
 Finally in this example we're taking advantage of an actual module format. The module format we're
-using is called CommonJS. CommonJS allows us to define all the code we want in a specific module, but
+using is called **CommonJS**. CommonJS allows us to define all the code we want in a specific module, but
 only the code we export becomes exposed for other modules to consume. To export code from a module in
 CommonJS we must utilize `module.exports`. Let's take a look at how we'd create a couple modules:
 
