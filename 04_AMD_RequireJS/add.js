@@ -1,6 +1,4 @@
 // Add module
 define([], function() {
-  return function add(a, b) {
-    return a + b;
-  }
+  return (a, b) => a + b;
 });

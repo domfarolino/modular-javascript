@@ -19,10 +19,8 @@ To define a module, we use the `define()` function whose API is above. `moduleId
 
 ```js
 // add.js
-define([], function() {
-  return function add(a, b) {
-    return a + b;
-  }
+define([], () => {
+  return (a, b) => a + b;
 });
 ```
 
@@ -32,10 +30,8 @@ Above we've created an anonymous module with no dependencies inside `add.js`. Es
 // sum.js
 
 // the sum module depends on reduce and add modules
-define(['./add', './reduce'], function(add, reduce) {
-  return function sum(list) {
-    return reduce(list, add, 0);
-  }
+define(['./add', './reduce'], (add, reduce) => {
+  return (list) => reduce(list, add, 0);
 });
 ```
 
@@ -46,12 +42,12 @@ In the above module we return a function that takes in a list and returns the su
 Consider the following AMD module:
 
 ```js
-define(['./sum'], function(sum) {
-  let nums = [1, 2, 3, 4, 5];
-  let result = sum(nums);
+define(['./sum'], sum => {
+  const nums = [1, 2, 3, 4, 5];
+  const result = sum(nums);
 
   if (/* perhaps some routing condition here for our app? */) {
-    require(['jquery'], function($) {
+    require(['jquery'], $ => {
       /**
        * Obviously we don't need to define a new module inside our
        * module, but we do want to `require` jquery asynchronously
