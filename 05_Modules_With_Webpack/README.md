@@ -33,7 +33,7 @@ require.ensure(['async-module-a', 'async-module-b'], function(require) {
 
 ```js
 // Nothing new here
-define(['sync-module-here'], function(syncModule) {
+define(['sync-module-here'], syncModule => {
 
   // When webpack comes across this require call, it creates a separate bundle for the modules
   require(['async-module-a', 'async-module-b'], function(asyncModuleA, asyncModuleB) {
