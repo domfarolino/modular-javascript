@@ -4,7 +4,7 @@
   "description": "Demonstrating different JavaScript module formats (CommonJS, AMD, ES2015, etc)",
   "main": "index.js",
   "scripts": {
-    "webpack-dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config ./05_Modules_With_Webpack/webpack.config.js",
+    "webpack-dev": "cd 05_Modules_With_Webpack && ../node_modules/webpack-dev-server/bin/webpack-dev-server.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
